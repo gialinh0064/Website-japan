@@ -1,38 +1,45 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ja">
 
 <head>
     <meta charset=UTF-8>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Dessert Food Website</title>
 </head>
 
 <body>
+
     <!--header-->
     <header>
         <div class="wrapper">
-            <img src="./img/img_sweets/header-sweets.jpg" />
+            <img class="headersweets" src="./img/img_sweets/header-sweets.jpg" alt="header-sweets" />
             <div class="text-wrapper">
-                <img src="img/logo.png" />
-                <ul class="nav">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a>ABOUT</a></li>
-                    <li><a href="sweets.html">SWEETS</a></li>
-                    <li><a>CONTACT</a></li>
-                    <li><a>BLOG</a></li>
-                    <li><a class="icon" href="#"><img src="./img/fb.png"></a></li>
-                    <li><a class="icon" href="#"><img src="./img/insta.png"></a></li>
-                    <li><a class="icon" href="#"><img src="./img/line.png"></a></li>
-                </ul>
+                <img class="imglogo" src="img/logo.png" alt="logo" />
+                <nav class="nav">
+                    <a href="#" class="menu-icon"></a>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a>ABOUT</a></li>
+                        <li><a href="sweets.html">SWEETS</a></li>
+                        <li><a>CONTACT</a></li>
+                        <li><a>BLOG</a></li>
+                        <li><a class="icon" href="#"><img src="./img/fb.png" alt="fb"></a></li>
+                        <li><a class="icon" href="#"><img src="./img/insta.png" alt="insta"></a></li>
+                        <li><a class="icon" href="#"><img src="./img/line.png" alt="line"></a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
-<!--Content-->
+
+    <!--Content-->
+    <!--MOCO’S SWEETS-Content-->
     <div class="centered">
         <h2 class="article-Sweet">mocoのおやつについて</h2>
         <p class="article text-English">MOCO’S SWEETS</p>
         <div>
-            <img class="imgright" src="./img/img_sweets/sweet1.jpg" />
+            <img class="imgright" src="./img/img_sweets/sweet1.jpg" alt="sweet1" />
             <p class="title-Sweet">工房販売は、毎週金曜日。</p>
             <p class="content-small-fontsize">「どれでも好きなのを選んでいいんだよ」
                 卵や乳のアレルギーをお持ちのお子様に嬉しそうに語りかけるご家族を店頭で見かけるたび、安心・安全なお菓子をつくる責任を感じます。
@@ -46,7 +53,7 @@
             <button class="button">お品書きをみる詳しくみる</button>
         </div>
         <div class="para">
-            <img class="imgleft" src="./img/img_sweets/sweet2.jpg" />
+            <img class="imgleft" src="./img/img_sweets/sweet2.jpg" alt="sweet2" />
             <p class="title-Sweet">バースデーや記念日のケーキ、季節のフルーツをたっぷりのせたホールケーキのご注文も承ります。</p>
             <p class="content-small-fontsize">アレルギーでもお誕生日はスポンジのホールケーキでお祝いしたい、mocoならそんな願いをかなえることができます。
                 ケーキの種類、トッピングするフルーツ、メッセージプレートなど、お客様と打ち合わせをしながらご要望に合わせてお作りしますので、mocoのホールケーキはそれぞれがオンリーワン。
@@ -58,10 +65,11 @@
         </div>
     </div>
 
-    <div class="centered">
+    <!--BAKED SWEETS-Content-->
+    <div class="para centered">
         <h2 class="article-Sweet">mocoの焼菓子</h2>
         <p class="article text-English">BAKED SWEETS</p>
-        <img src="./img/img_sweets/baked_sweets.jpg" />
+        <img class="imgbakesweets" src="./img/img_sweets/baked_sweets.jpg" alt="baked_sweets" />
         <p class="title-Sweet content-small-fontsize dottedbaked">卵・乳・白砂糖不使用のmocoの焼菓子は、ギフトにも。</p>
         <p class="content-small-fontsize">授乳中はなるべく乳製品をとらないようにしたい、そんな希望をお持ちのお母さま方にもmocoのお菓子はとても喜ばれており、ご出産のお祝いにもぴったりです。
             ご予算に合わせて、お好みのマフィンやコンフィチュール、クッキーをお選びいただき、お箱に入れて贈答用にラッピングさせていただくことができます。
@@ -72,63 +80,70 @@
         </p>
     </div>
 
-
-    <div class="centered">
+    <!--VOICE-Content-->
+    <div class="section-voice">
+        <div class="centered">
             <h2 class="article-Sweet">お客様の声</h2>
             <p class="article text-English">VOICE</p>
             <div class="flex-column">
-                <div class="bordervoice">
-                    <img class="imgvoice" src="./img/img_sweets/voice01.jpg">
-                    <div class="para">
-                        <p class="title-Sweet dottedvoice">30代 女性 T様</p>
-                        <p class="content-small-fontsize">体調を崩した事がきっかけで、豆腐・豆乳好きになった私。そんな時たまたま見つけたmocoのお店。豆腐や豆乳を使ったスイーツが多く、何より甘さが控えめで素材の本当の味が生かされてる。思わず「美味しい☆」と笑顔がほころびました。
-                            苦手だったクッキーもmocoのは大丈夫！
-                            ちなみに母はマフィン（特にバナナ）が大好きです。
-                            いつも美味しいスイーツをありがとうございます！</p>
+                <div class="column-1">
+                    <div class="bordervoice">
+                        <img class="imgvoice" src="./img/img_sweets/voice01.jpg" alt="voice01">
+                        <div class="para">
+                            <p class="title-Sweet dottedvoice">30代 女性 T様</p>
+                            <p class="content-small-fontsize">体調を崩した事がきっかけで、豆腐・豆乳好きになった私。そんな時たまたま見つけたmocoのお店。豆腐や豆乳を使ったスイーツが多く、何より甘さが控えめで素材の本当の味が生かされてる。思わず「美味しい☆」と笑顔がほころびました。
+                                苦手だったクッキーもmocoのは大丈夫！
+                                ちなみに母はマフィン（特にバナナ）が大好きです。
+                                いつも美味しいスイーツをありがとうございます！</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="bordervoice">
-                    <img class="imgvoice" src="./img/img_sweets/voice02.jpg">
-                    <div class="para">
-                        <p class="title-Sweet dottedvoice">30代 女性 W様</p>
-                        <p class="content-small-fontsize">授乳中は乳製品を控えているのでケーキ類を食べられず…。でも、たまには食べたい！と思っていた時に、卵・乳製品を使わないmocoさんのお菓子に出会いました。
-                            「本当に乳製品使ってないの？」ってくらい普通のケーキと変わらない満足感。優しい甘さでほっこりした気分になれます。
-                            ケーキの種類も季節に合わせて変わっていくので毎週のお品書きも楽しみ。
-                            マフィンは冷蔵・冷凍保存で日持ちできるのも、とっても嬉しいです。</p>
+                <div class="column-2">
+                    <div class="bordervoice">
+                        <img class="imgvoice" src="./img/img_sweets/voice02.jpg" alt="voice02">
+                        <div class="para">
+                            <p class="title-Sweet dottedvoice">30代 女性 W様</p>
+                            <p class="content-small-fontsize">授乳中は乳製品を控えているのでケーキ類を食べられず…。でも、たまには食べたい！と思っていた時に、卵・乳製品を使わないmocoさんのお菓子に出会いました。
+                                「本当に乳製品使ってないの？」ってくらい普通のケーキと変わらない満足感。優しい甘さでほっこりした気分になれます。
+                                ケーキの種類も季節に合わせて変わっていくので毎週のお品書きも楽しみ。
+                                マフィンは冷蔵・冷凍保存で日持ちできるのも、とっても嬉しいです。</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="bordervoice">
-                    <img class="imgvoice" src="./img/img_sweets/voice03.jpg">
-                    <div class="para">
-                        <p class="title-Sweet dottedvoice">30代 女性 I様</p>
-                        <p class="content-small-fontsize">材料の生産者を提示し、減農薬や無農薬などのフルーツを使ってくださるので、子どもにも安心して食べさせることができます。誕生日ケーキなど、オーダーメイドで作ってくれて、その時々の旬のフルーツから、自分の好きなフルーツを使ってケーキを作ってくれます。
-                            娘にアレルギーがあるため外食できるところが限られるのですが、店主さんがお店なども教えてくれて、とても親切に対応してくださいます。</p>
+                <div class="column-3">
+                    <div class="bordervoice">
+                        <img class="imgvoice" src="./img/img_sweets/voice03.jpg" alt="voice03">
+                        <div class="para">
+                            <p class="title-Sweet dottedvoice">30代 女性 I様</p>
+                            <p class="content-small-fontsize">材料の生産者を提示し、減農薬や無農薬などのフルーツを使ってくださるので、子どもにも安心して食べさせることができます。誕生日ケーキなど、オーダーメイドで作ってくれて、その時々の旬のフルーツから、自分の好きなフルーツを使ってケーキを作ってくれます。
+                                娘にアレルギーがあるため外食できるところが限られるのですが、店主さんがお店なども教えてくれて、とても親切に対応してくださいます。</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <button class="button button-center">もっとみる</button>
+        </div>
     </div>
+
+
     <!--footer-->
     <footer>
         <div class="wrapper">
-            <img src="./img/footer.jpg" />
-            <div class="text-wrapper content-small-fontsize">
-                <img src="img/logo.png" />
+            <img class="footer" src="./img/footer.jpg" alt="footer" />
+            <div class="text-wrapper">
+                <img class="imglogo" src="img/logo.png" alt="logo" />
                 <p><span class="overline">卵・乳製品・白砂糖をつかわない おやつのアトリエmoco</span></p>
                 <p>〒505-0038 岐阜県美濃加茂市中部台2-14-15</p>
                 <p><span class="underline">OPEN：毎週金曜 11:00～18:30（売切れ次第閉店となります）</span></p>
                 <p class="list-icon">
-                    <a class="icon" href="#"><img src="./img/fb.png"></a>
-                    <a class="icon" href="#"><img src="./img/insta.png"></a>
-                    <a class="icon" href="#"><img src="./img/line.png"></a>
+                    <a class="icon" href="#"><img src="./img/fb.png" alt="fb"></a>
+                    <a class="icon" href="#"><img src="./img/insta.png" alt="insta"></a>
+                    <a class="icon" href="#"><img src="./img/line.png" alt="line"></a>
                 </p>
                 <p>© L'ATELIER DU GOÛTER MOCO. ALL RIGHTS RESERVED.</p>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

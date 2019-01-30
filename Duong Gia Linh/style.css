@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -12,19 +11,27 @@
     background-size: cover;
 }
 
-header,footer {
+header,
+footer {
     color: white;
 }
-.myslide{
+
+.myslide {
     height: 100vh;
     width: 1920px;
 }
+
 .divmoco {
     position: relative;
     width: 1920px;
     height: 424px;
 }
 
+.divreason {
+    position: relative;
+    width: 1920px;
+    height: 303px;
+}
 
 
 body {
@@ -32,17 +39,9 @@ body {
     text-decoration: none;
     font-family: 'Yu Gothic', san-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
+    width: 1920px;
 }
-
-
-.text-center {
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
 
 .right {
     position: relative;
@@ -51,11 +50,15 @@ body {
 
 }
 
+.menu-icon {
+    display: hidden;
+}
+
 .text-wrapperright {
     position: absolute;
     top: 40px;
     bottom: 0;
-    left: 950px;
+    left: 200px;
     right: 0;
     margin: 20px auto;
     text-align: center;
@@ -63,15 +66,15 @@ body {
 
 .nav a {
     display: inline-block;
-    padding: 10px;
-    margin-top: 30px;
+    padding: 15px;
+    margin-top: 10px;
 }
 
-.text-English{
+.text-English {
     text-decoration: none;
     font-family: 'Muli', sans-serif;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 a {
@@ -79,7 +82,7 @@ a {
     text-decoration: none;
     font-family: 'Muli', sans-serif;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .nav li {
@@ -96,7 +99,7 @@ a {
     color: brown;
     font-size: 36px;
     text-align: center;
-    
+
 }
 
 .date {
@@ -109,16 +112,16 @@ a {
 .title-Sweet {
     font-weight: bold;
     font-size: 20.37px;
-    color: brown;   
+    color: brown;
 }
 
-.text-wrapper{
+.text-wrapper {
     position: absolute;
-    top: 100px;
-    bottom: 100px;
-    left: 100px;
+    top: 150px;
+    bottom: 200px;
+    left: 200px;
     right: 100px;
-    margin: 0 auto;
+    margin: 0 15px 15px 15px;
     text-align: center;
 
 }
@@ -144,7 +147,7 @@ a {
     background-color: brown;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 5px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -153,6 +156,8 @@ a {
     cursor: pointer;
     font-family: 'Yu Gothic', san-serif;
     font-weight: 500;
+    width: 220px;
+    height: 36px;
 
 }
 
@@ -160,6 +165,7 @@ a {
     background-color: white;
     color: brown;
     border: 2px solid brown;
+
 }
 
 span.overline {
@@ -195,7 +201,7 @@ span.underline {
     height: 440px;
     margin-left: 10px;
     padding-right: 20px;
-    
+
 }
 
 .imgnews {
@@ -209,8 +215,8 @@ p.underline {
     border-bottom: 1px solid brown;
     color: brown;
     font-size: 16px;
-    margin: 15px 0 0 150px;
-    
+    margin: 15px 0 12px 150px;
+
 }
 
 p.dottedbaked {
@@ -219,6 +225,7 @@ p.dottedbaked {
     padding-bottom: 2px;
     color: brown;
     font-size: 16px;
+    margin-top: 10px;
 }
 
 
@@ -230,7 +237,7 @@ p.dottedvoice {
     font-size: 16px;
 }
 
-.border{
+.border {
     border-width: 3px;
     border-style: 1px solid white;
     width: 521px;
@@ -240,7 +247,7 @@ p.dottedvoice {
     opacity: 0.5;
 }
 
-.bordernews{
+.bordernews {
     border-width: 5px;
     border-style: 5px solid gray;
     width: 310px;
@@ -250,27 +257,33 @@ p.dottedvoice {
     margin: 20px 0 20px 0;
 }
 
-.bordervoice{
+.bordervoice {
     border-width: 3px;
-    border-style: 5px solid darkgray;
-    height:500px;
+    border-style: 5px solid #8795a1;
+    box-shadow: 1px 1px 1px #4C4843;
+    height: 560px;
     width: 300px;
     text-align: center;
-    align-items: center;
-   
-}
+    margin: 20px 0 20px 0;
+    padding-left: 20px;
 
-.aside{
-    position: absolute;
 }
 
 .text-rotate {
     float: left;
-    position: relative;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
+    writing-mode: vertical-rl;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.section-reason {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 303px;
+    width: 1920px;
+    text-align: left;
 }
 
 .content-small-fontsize {
@@ -278,36 +291,50 @@ p.dottedvoice {
 }
 
 .flex-column {
-    display: grid;
+    display: flex;
     justify-content: space-between;
-    width: 900px;
-    grid-template-columns: 300px 300px 300px;
-    align-items: center;
-    grid-column-gap: 30px;
-    grid-row-gap: 25px;
+    width: 1000px;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    flex-flow: nowrap;
 }
 
+.section-voice {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 750px;
+    width: 1920px;
+}
 
 .section-news {
     background-color: #FF9C46;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: cover;
+    height: 545px;
+    width: 1920px;
 }
 
 .font-YuMincho {
     text-decoration: none;
     font-family: 'Yu Mincho', serif;
-    font-size: 36px;
+    font-size: 32px;
 }
-.imglabel{
-    margin: -400px 50px 50px 500px;
+
+.imglabel {
+    position: absolute;
+    left: 350px;
+    bottom: 100px;
+    opacity: 1.0;
 }
+
 .centered {
-    margin: 15px auto;
-    width:1000px;
-    margin-left: 380px;
-    margin-top: 100px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button-center {
@@ -315,22 +342,733 @@ p.dottedvoice {
     margin: 0 auto;
 }
 
-.imgvoice{
+.imgvoice {
     float: none;
     margin: 15px 15px 15px 15px;
 }
+
+
 @media only screen and (max-width: 768px) {
 
+    /*Breakpoint max-width:768px*/
+
+    * {
+        margin: auto;
+        max-width: 768px;
+    }
+
+    .wrapper {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header,
+    footer {
+        color: white;
+    }
+
+    .myslide {
+        height: 100vh;
+    }
+
+    .divmoco {
+        position: relative;
+        height: -webkit-fill-available;
+    }
+
+    .divreason {
+        position: relative;
+        height: 3.03%;
+    }
+
+    body {
+        background-color: white;
+        text-decoration: none;
+        font-family: 'Yu Gothic', san-serif;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .imglogo {
+        width: 15%;
+        height: 20%;
+    }
+
+    .right {
+        position: relative;
+        width: 100%;
+
+    }
+
+    .text-wrapperright {
+        position: absolute;
+        top: 10%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .text-English {
+        text-decoration: none;
+        font-family: 'Muli', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .article {
+        color: brown;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .article-Sweet {
+        color: brown;
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    .date {
+        color: brown;
+        text-align: left;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .title-Sweet {
+        font-weight: bold;
+        font-size: 18px;
+        color: brown;
+    }
+
+    .text-wrapper {
+        position: absolute;
+        top: 15%;
+        bottom: 20%;
+        left: 200px;
+        right: 10%;
+        margin: 0 15px 15px 15px;
+        text-align: center;
+    }
+
+    .left {
+        position: relative;
+        width: 50%;
+
+    }
+
+    .text-wrapperleft {
+        position: absolute;
+        top: 5%;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .button {
+        background-color: brown;
+        border: none;
+        color: white;
+        padding: 5px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 5px 2px;
+        cursor: pointer;
+        font-family: 'Yu Gothic', san-serif;
+        font-weight: 500;
+        width: 80%;
+
+    }
+
+
+
+    .button1 {
+        background-color: brown;
+        color: white;
+        border: 2px solid brown;
+    }
+
+    span.overline {
+        display: inline-block;
+        border-top: 1px solid white;
+        padding-top: 1%;
+        margin-top: 1%;
+    }
+
+    span.underline {
+        display: inline-block;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .imgright {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .para {
+        clear: both;
+    }
+
+    .imgleft {
+        float: none;
+        margin: 0 auto;
+
+    }
+
+    .imgnews {
+        width: 20%;
+        height: 3%;
+        float: left;
+    }
+
+    .menu-icon {
+        float: right;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: url(./img/mobile/Menu1.png);
+        position: absolute;
+        padding: 10px;
+        margin-top:50px;
+        margin-left: 210px;
+        padding-bottom: 20px;
+
+    }
+
+    nav ul,
+    nav:active ul {
+
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: black;
+        border: 5px solid #444;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+        border-radius: 4px 0 4px 4px;
+
+    }
+
+    nav li a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Muli', sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+
+    }
+
+    nav:hover ul {
+        display: block;
+
+    }
+
+    p.underline {
+        display: inline-block;
+        border-bottom: 1px solid brown;
+        color: brown;
+        font-size: 8px;
+        margin: 15px 0 12px 150px;
+
+    }
+
+    p.dottedbaked {
+        display: inline-block;
+        border-bottom: 1px dashed brown;
+        padding-bottom: 2px;
+        color: brown;
+        font-size: 8px;
+        margin-top: 10px;
+    }
+
+
+    p.dottedvoice {
+        display: inline-block;
+        border-bottom: 1px dashed gray;
+        padding-bottom: 2px;
+        color: brown;
+        font-size: 8px;
+    }
+
+    .border {
+        border-width: 2px;
+        border-style: 1px solid white;
+        width: 90%;
+        height: 70%;
+        text-align: center;
+        background-color: #fff;
+        opacity: 0.8;
+    }
+
+    .bordernews {
+        border-width: 5px;
+        border-style: 5px solid gray;
+        width: 100%;
+        height: 70%;
+        text-align: left;
+        background-color: #fff;
+        margin: 20px 0 20px 0;
+    }
+
+    .bordervoice {
+        border-width: 3px;
+        border-style: 5px solid #8795a1;
+        box-shadow: 1px 1px 1px #4C4843;
+        height: 80%;
+        width: 300px;
+        text-align: center;
+        margin-bottom: 20%;
+
+    }
+
+    .text-rotate {
+        float: none;
+        margin: 0 auto;
+        writing-mode: horizontal-tb;
+    }
+
+
+    .text-wrapperreason {
+        position: relative;
+        margin-left: 10px;
+    }
+
+    .content-small-fontsize {
+        font-size: 24px;
+    }
+
+    .flex-column {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+    }
+
+    .section-reason {
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        height: 60%;
+        text-align: center;
+    }
+
+    .section-voice {
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        height: 80%;
+    }
+
+    .section-news {
+        background-color: #FF9C46;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        height: 97%;
+    }
+
+    .imgbakesweets {
+        width: 100%;
+        height: 50%;
+    }
+
+    .font-YuMincho {
+        text-decoration: none;
+        font-family: 'Yu Mincho', serif;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .imglabel {
+        display: none;
+    }
+
+    .centered {
+        width: 50%;
+        margin: 0 auto;
+
+    }
+
+    .button-center {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .imgvoice {
+        float: none;
+        margin: 15px 15px 15px 15px;
+    }
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width:1000px),
+only screen and (min--moz-device-pixel-ratio: 2) and (min-width:1000px),
+only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width:1000px),
+only screen and (min-device-pixel-ratio: 2) and (min-width:1000px),
+only screen and (min-resolution: 192dpi) and (min-width:1000px),
+only screen and (min-resolution: 2dppx) and (min-width:1000px) {
 
-  /* Retina-specific stuff here */
+
+    /* Retina-specific stuff here */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrapper {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header,
+    footer {
+        color: white;
+    }
+
+    .myslide {
+        height: 100vh;
+        width: 3840px;
+    }
+
+    .divmoco {
+        position: relative;
+        width: 3840px;
+        height: 848px;
+    }
+
+    .footer {
+        height: 1174px;
+        width: 3840px;
+    }
+
+    body {
+        background-color: white;
+        text-decoration: none;
+        font-family: 'Yu Gothic', san-serif;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .right {
+        position: relative;
+        width: 1920px;
+        float: right;
+
+    }
+
+    .imgleftbake {
+        width: 1920px;
+        height: 884px;
+    }
+
+    .headersweets {
+        width: 3840px;
+        height: 1168px;
+    }
+
+    .imgrightbake {
+        width: 1920px;
+        height: 884px;
+    }
+
+    .text-wrapperright {
+        position: absolute;
+        top: 40px;
+        bottom: 0;
+        left: 950px;
+        right: 0;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .imgbakesweets {
+        width: 2080px;
+        height: 1000px;
+    }
+
+    .nav a {
+        display: inline-block;
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    .text-English {
+        text-decoration: none;
+        font-family: 'Muli', sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Muli', sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    .nav li {
+        display: inline;
+    }
+
+    .article {
+        color: brown;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .article-Sweet {
+        color: brown;
+        font-size: 36px;
+        text-align: center;
+
+    }
+
+    .date {
+        color: brown;
+        text-align: left;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .title-Sweet {
+        font-weight: bold;
+        font-size: 20.37px;
+        color: brown;
+    }
+
+    .text-wrapper {
+        position: absolute;
+        top: 300px;
+        bottom: 400px;
+        left: 400px;
+        right: 200px;
+        margin: 0 30px 30px 30px;
+        text-align: center;
+
+    }
+
+    .left {
+        position: relative;
+        width: 1920px;
+        float: left;
+
+    }
+
+    .text-wrapperleft {
+        position: absolute;
+        top: 50px;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .button {
+        background-color: brown;
+        border: none;
+        color: white;
+        padding: 5px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-family: 'Yu Gothic', san-serif;
+        font-weight: 500;
+
+    }
+
+    .button1 {
+        background-color: white;
+        color: brown;
+        border: 2px solid brown;
+    }
+
+    span.overline {
+        display: inline-block;
+        border-top: 1px solid white;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    span.underline {
+        display: inline-block;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .imgright {
+        float: right;
+        width: 600px;
+        height: 880px;
+        margin: 20px;
+        padding-left: 40px;
+    }
+
+    .para {
+        clear: both;
+    }
+
+    .imgleft {
+        float: left;
+        width: 600px;
+        height: 880px;
+        margin-left: 20px;
+        padding-right: 40px;
+
+    }
+
+    .imgnews {
+        width: 82px;
+        height: 79px;
+        float: left;
+    }
+
+    p.underline {
+        display: inline-block;
+        border-bottom: 1px solid brown;
+        color: brown;
+        font-size: 16px;
+        margin: 15px 0 12px 150px;
+
+    }
+
+    p.dottedbaked {
+        display: inline-block;
+        border-bottom: 1px dashed brown;
+        padding-bottom: 2px;
+        color: brown;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+
+    p.dottedvoice {
+        display: inline-block;
+        border-bottom: 1px dashed gray;
+        padding-bottom: 2px;
+        color: brown;
+        font-size: 16px;
+    }
+
+    .border {
+        border-width: 3px;
+        border-style: 1px solid white;
+        width: 521px;
+        height: 244px;
+        text-align: center;
+        background-color: #fff;
+        opacity: 0.5;
+    }
+
+    .bordernews {
+        border-width: 5px;
+        border-style: 5px solid gray;
+        width: 310px;
+        height: 80px;
+        text-align: left;
+        background-color: #fff;
+        margin: 20px 0 20px 0;
+    }
+
+    .bordervoice {
+        border-width: 3px;
+        border-style: 5px solid #8795a1;
+        box-shadow: 1px 1px 1px #4C4843;
+        height: 450px;
+        width: 300px;
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+
+    .text-rotate {
+        float: left;
+        position: relative;
+        writing-mode: vertical-rl;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .text-reason {
+        padding-right: 40px;
+    }
+
+    .content-small-fontsize {
+        font-size: 16px;
+    }
+
+    .flex-column {
+        display: grid;
+        justify-content: space-between;
+        width: 900px;
+        grid-template-columns: 300px 300px 300px;
+        align-items: center;
+        grid-column-gap: 30px;
+        grid-row-gap: 25px;
+    }
+
+
+    .section-news {
+        background-color: #FF9C46;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
+        height: 1900px;
+        width: 3840px;
+    }
+
+    .font-YuMincho {
+        text-decoration: none;
+        font-family: 'Yu Mincho', serif;
+        font-size: 36px;
+    }
+
+    .imglabel {
+        position: absolute;
+        left: 350px;
+        bottom: 100px;
+    }
+
+    .centered {
+        margin: 30px auto;
+        width: 3840px;
+        margin-left: 760px;
+        margin-top: 200px;
+    }
+
+    .button-center {
+        width: 3840px;
+        margin: 0 auto;
+    }
+
+    .imgvoice {
+        float: none;
+        margin: 15px 15px 15px 15px;
+    }
+
 
 }
